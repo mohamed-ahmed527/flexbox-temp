@@ -1,0 +1,471 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  overflow-x: hidden;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+.discription{
+  text-align: center;
+  h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  p{
+    margin: 15px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: rgb(44, 43, 43);
+  }
+}
+.freepik{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(117, 109, 109);
+  a{
+    color: rgb(117, 109, 109);
+  }
+}
+.social{
+  margin-top: 25px;
+  span{
+    font-size: 33px;
+    margin-right: 10px;
+  }
+}
+/*****************header********************/
+header{
+  padding: 80px 0px;
+  background-image: url(../imgs/bk_header.jpg);
+  overflow: hidden;
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    .header_info{
+      flex: 1 1 40%;
+      min-width: 300px;
+      h3{
+        p.ball{
+          display: inline-block;
+          min-width: 80px;
+          min-height: 80px;
+          background-color: #ec563d;
+          border-radius: 50%;
+          margin-top: 70px;
+          margin-bottom: 30px;
+        }
+      }
+      h1{
+        font-size: 92px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+        line-height: 1;
+      }
+      p{
+        margin: 20px 0px;
+        font-weight: 600;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: rgb(24, 23, 23);
+        line-height: 1.7;
+        letter-spacing: 1.5;
+      }
+      button{
+        background-color: black;
+        color: white;
+        padding: 15px 50px;
+        border:0;
+        font-size: 17px;
+      }
+    }
+    .header_photo{
+      flex: 1 1 60%;
+      min-width: 300px;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+/********************profile*******************/
+.profile{
+  padding: 100px 0px;
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px ;
+    .about{
+      flex: 1 0 32%;
+      min-width: 300px;
+      margin-top: 30px;
+      h1{
+        font-size: 27px;
+        font-family: sans-serif;
+      }
+      p{
+        margin: 30px 0px;
+        line-height: 2;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    }
+    .about_photo{
+      flex: 1 0 30%;
+      min-width: 300px;
+      margin-top: 30px;
+      img{
+        display: block;
+        max-width: 80%;
+        margin: auto;
+        border-radius: 50%;
+      }
+    }
+    .details{
+      flex: 1 0 32%;
+      min-width: 300px;
+      margin-top: 30px;
+      h1{
+        font-size: 27px;
+        font-family: sans-serif;
+        margin-bottom: 24px;
+      }
+      .deta_text{
+        .prop{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 14px;
+          color: black;
+          font-weight: 600;
+        }
+        .prop_text{
+          color: rgb(160, 153, 153);
+          margin: 17px 0px;
+          font-size: 15px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+      }
+    }
+  }
+}
+/****************INFO SECTION*****************/
+.info{
+  padding: 100px 0px;
+  .container{
+    >h1{
+      font-size: 47px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      width: fit-content;
+      border-bottom: 10px solid #ec563d;
+      margin-bottom: 30px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    >p{
+      width: 75%;
+      font-size: 18px;
+      line-height: 1.8;
+      letter-spacing: 1.7;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    >p:last-of-type{
+      width: 75%;
+      line-height: 1.7;
+      font-size: 18px;
+      letter-spacing: 1.4;
+      font-weight: 500;
+    }
+    .info_img{
+      display: flex;
+      img{
+        flex: 0 0 420px;
+        max-width: 90%;
+      }
+    }
+    .info_discription{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      margin-top: 30px;
+      .text_right{
+        flex: 0.5 1 400px;
+        max-width: 700px;
+        margin-right: 50px;
+        >p{
+          font-size: 16px;
+          letter-spacing: 1.6;
+          line-height: 2;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+      }
+      .info_contact{
+        max-width: 100%;
+        background-color: #ec563d;
+        padding: 50px 35px;
+        color: white;
+        margin-top: -90px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        h2{
+          font-size: 21px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          margin: 20px 0px;
+          letter-spacing: 2;
+        }
+        h3{
+          letter-spacing: 1.5;
+          font-size: 16px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3:hover{
+          cursor: pointer;
+          color: rgb(228, 222, 222);
+        }
+      }
+    }
+  }
+}
+/****************WHAT DOING*****************/
+.doing{
+  background-color: #ddd;
+  padding: 100px 0px;
+  .container{
+    .content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .box{
+        flex: 0 0 28%;
+        min-width: 300px;
+        display: flex;
+        margin-top: 80px;
+        margin-right: 30px;
+        .icon{
+          font-size: 26px;
+          margin-right: 20px;
+          background-color: #ec563d;
+          color: white;
+          border-radius: 50%;
+          padding: 17px;
+          padding-bottom: 0px;
+          height: 45px;
+        }
+        .text{
+          h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            letter-spacing: 2.5;
+            color: #555c66;
+          }
+          p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.5;
+            color: rgb(51, 48, 48);
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+/******************WORK***************/
+.work{
+  padding: 100px 0px;
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden;
+  .container:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div{
+      flex: 1 0  31%;
+      min-width: 300px;
+      height: 350px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 70px;
+      margin-right: 20px;
+    }
+    div:nth-of-type(1){
+      background-image: url(../imgs/work1.jpg);
+    }
+    div:nth-of-type(2){
+      background-image: url(../imgs/work2.jpg);
+    }
+    div:nth-of-type(3){
+      background-image: url(../imgs/work3.jpg);
+    }
+    div:nth-of-type(4){
+      background-image: url(../imgs/work4.jpg);
+    }
+    div:nth-of-type(5){
+      background-image: url(../imgs/work5.jpg);
+    }
+    div:nth-of-type(6){
+      background-image: url(../imgs/work6.jpg);
+    }
+  }
+  .container:last-of-type{
+    display: flex;
+    justify-content: flex-end;
+    >div{
+      flex: 0 0 30%;
+      min-width: 185px;
+      padding: 30px 25px;
+      background-color: white;
+      margin-top: -100px;
+      margin-right: 3%;
+      h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 33px;
+      }
+      >p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 15px 0px;
+        line-height: 1.5 ;
+        letter-spacing: 1;
+        font-size: 17px;
+      }
+      button{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 20px 0px;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: 0px;
+        background-color: rgb(34, 33, 33);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.work::before{
+  content: "";
+  position: absolute;
+  height: 94%;
+  background-color: #ec563d;
+  width: 350px ;
+  margin-left: 20%;
+  top: 100;
+  left: 0;
+  z-index: -1;
+}
+/****************slider*****************/
+.slider{
+  padding: 100px 0px;
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #ddd;
+  .container{
+    .splide{
+      .splide__arrow{
+        width: 2.5em;
+        height: 2.5em;
+      }
+      .splide__pagination{
+        bottom: -2.5em;
+      }
+      .splide__track{
+        .splide__list{
+          .splide__slide{
+            img{
+              display: block;
+              width: 175px;
+              height: 175px;
+              margin: auto;
+              border-radius: 50%;
+              border: 7px solid #ec563d;
+              margin-bottom: 50px;
+            }
+            >p{
+              width: 60%;
+              margin: auto;
+              font-size: 18px;
+              letter-spacing: 2.5;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h2{
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              margin: 30px 0px;
+              letter-spacing: 5;
+              font-size: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*************CONTACT********************/
+.contact{
+  padding: 100px 0px;
+  background-color:#292e33;
+  color: white; 
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .left{
+      flex:1 1 40%;
+      min-width: 300px;
+      margin-bottom: 50px;
+      margin-right: 60px;
+      h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 20px ;
+        font-size: 18px;
+        letter-spacing: 3;
+      }
+      h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 30px;
+        font-size: 28px;
+        letter-spacing: 2;
+      }
+      p{
+        line-height: 1.6;
+        font-size: 18px;
+        letter-spacing: 2;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 20px 0px;
+      }
+    }
+    .right{
+      flex:2 0 40%;
+      min-width: 300px;
+      form{
+        input{
+          display: block;
+          width: 98%;
+          padding: 2%;
+          margin-bottom:15px ;
+          font-size: 1em;
+        }
+        textarea{
+          display: block;
+          width: 98%;
+          height: 220px;
+          margin-bottom: 15px;
+          outline-style: none;
+          font-size: 1.5em;
+          padding:2%;
+        }
+        button{
+          padding: 13px 30px;
+          border: 1px solid grey;
+          color: white;
+          font-size: 1em;
+          cursor: pointer;
+          box-shadow: 2px 2px 1px  0px grey;
+          background-color: transparent;
+        }
+      }
+    }
+    
+  }
+}
